@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Music Player By ByteWebster</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- www.bytewebster.com -->
+    <!-- www.bytewebster.com -->
+    <!-- www.bytewebster.com (Visit)  -->
+  </head>
+  <body>
+    <div class="player">
+      <div class="player__header">
+        <div class="player__img player__img--absolute slider">
+          <button class="player__button player__button--absolute--nw playlist">
+            <img
+              src="http://physical-authority.surge.sh/imgs/icon/playlist.svg"
+              alt="playlist-icon"
+            />
+          </button>
+          <button class="player__button player__button--absolute--center play">
+            <img
+              src="http://physical-authority.surge.sh/imgs/icon/play.svg"
+              alt="play-icon"
+            />
+            <img
+              src="http://physical-authority.surge.sh/imgs/icon/pause.svg"
+              alt="pause-icon"
+            />
+          </button>
+          <div class="slider__content">
+            <img
+              class="img slider__img"
+              src="https://c-fa.cdn.smule.com/rs-s78/arr/7c/c5/4395db80-6464-43ee-adcd-0c49f33966c1_1024.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="https://i.scdn.co/image/ab67616d0000b2739c4e5c2a5dadd88ba683c2dd"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="https://i1.sndcdn.com/artworks-0yuuPK1uHxEyy9mO-L7TLLA-t500x500.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="https://i1.sndcdn.com/artworks-SotphFUPrUUr2TyW-xTdBMA-t500x500.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="https://i.ytimg.com/vi/qn52wWcvzJU/maxresdefault.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="https://i.ytimg.com/vi/I83tkBMVoYw/mqdefault.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="https://i1.sndcdn.com/artworks-Hq6SKKm4Gz07ynYg-prHCEg-t500x500.jpg"
+              alt="cover"
+            />
+          </div>
+        </div>
+        <div class="player__controls">
+          <button class="player__button back">
+            <img
+              class="img"
+              src="http://physical-authority.surge.sh/imgs/icon/back.svg"
+              alt="back-icon"
+            />
+          </button>
+          <p class="player__context slider__context">
+            <strong class="slider__name"></strong>
+            <span class="player__title slider__title"></span>
+          </p>
+          <button class="player__button next">
+            <img
+              class="img"
+              src="http://physical-authority.surge.sh/imgs/icon/next.svg"
+              alt="next-icon"
+            />
+          </button>
+          <div class="progres">
+            <div class="progres__filled"></div>
+          </div>
+        </div>
+      </div>
+      <ul class="player__playlist list">
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="https://c-fa.cdn.smule.com/rs-s78/arr/7c/c5/4395db80-6464-43ee-adcd-0c49f33966c1_1024.jpg"
+            alt="Anne-Marie & James Arthur - Rewrite The Stars"
+            title="Anne-Marie & James Arthur - Rewrite The Stars"
+          />
+          <p class="player__context">
+            <b class="player__song-name">Rewrite The Stars</b>
+            <span class="flex">
+              <span class="player__title"
+                >Anne-Marie & James Arthur - Rewrite The Stars</span
+              >
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="Anne-Marie & James Arthur - Rewrite The Stars (Lyrics).mp3"
+          ></audio>
+        </li>
+
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="https://i.scdn.co/image/ab67616d0000b2739c4e5c2a5dadd88ba683c2dd"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">Better Me</b>
+            <span class="flex">
+              <span class="player__title">LEXNOUR </span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="LEXNOUR - Better Me (Official Audio).mp3"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="https://i1.sndcdn.com/artworks-0yuuPK1uHxEyy9mO-L7TLLA-t500x500.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">Thrung Thrung Karmo</b>
+            <span class="flex">
+              <span class="player__title"
+                >Sonam Pelden Thinley & Lungten Wangchuk Karma</span
+              >
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="Thrung Thrung Karmo Lyrics  - Sonam Pelden Thinley & Lungten Wangchuk Karma.mp3"
+          ></audio>
+        </li>
+
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="https://i1.sndcdn.com/artworks-SotphFUPrUUr2TyW-xTdBMA-t500x500.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">Ngen Ga </b>
+            <span class="flex">
+              <span class="player__title">D.N.R</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="Ngen Ga Lyric_D.N.R__Latest Bhutanese song_.mp3"
+          ></audio>
+        </li>
+
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="https://i.ytimg.com/vi/qn52wWcvzJU/maxresdefault.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">Aakhale</b>
+            <span class="flex">
+              <span class="player__title">Yabesh Thapa X TWK</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="Yabesh Thapa X TWK - Aakhale (Lyrical Visualizer).mp3"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="https://i.ytimg.com/vi/I83tkBMVoYw/mqdefault.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">HAGOMATSHU</b>
+            <span class="flex">
+              <span class="player__title">Jamyang Chophel Dorji</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="HAGOMATSHU- Muskie Films _ Jamyang Chophel Dorji Ft. Tshering Miekha Jigsnam _ Dolma Lhamo.mp3"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="https://i1.sndcdn.com/artworks-Hq6SKKm4Gz07ynYg-prHCEg-t500x500.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">Namsa Mawa</b>
+            <span class="flex">
+              <span class="player__title">MISTY TERRACE - Yeshey Choden</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="Namsa Mawa - MISTY TERRACE - Yeshey Choden - Akira Nair - VadersCrew - New Bhutanese song 2022.mp3"
+          ></audio>
+        </li>
+      </ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
